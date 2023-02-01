@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "local_tuya_ceiling_fan"
+version = "1.0.0"
+description = "Control a Tuya Ceiling fan over LAN."
+authors = ["Gabriel Pajot <gab@les-cactus.co>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/gpajot/local-tuya-ceiling-fan"
+include = ["local_tuya_ceiling_fan/py.typed"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.12"
+
+local_tuya = ">=0.1,<1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7"
+pytest-asyncio = "^0"
+pytest-mock = "^3"
+flake8 = "^5"
+black = "^22"
+isort = "^5"
+mypy = "~0"
+pre-commit = "^2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+install_types = true
+non_interactive = true
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
