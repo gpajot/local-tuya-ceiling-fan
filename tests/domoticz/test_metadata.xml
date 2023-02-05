@@ -1,0 +1,31 @@
+<plugin key="local_tuya_ceiling_fan" name="Tuya Ceiling Fan" author="Gabriel Pajot" version="{version:s}" wikilink="https://github.com/gpajot/local-tuya-ceiling-fan">
+  <description>
+    <p>
+      <h2>Tuya Ceiling Fan</h2>
+    </p>
+    <p>
+      <h3>Features</h3>
+      <ul>
+        <li>Control a Tuya ceiling fan over LAN</li>
+        <li>Automatically receive new device state (compatible with remote usage)</li>
+      </ul>
+    </p>
+    <p>
+      <h3>Devices</h3>
+      <ul>
+        <li>Power - Turn the fan on or off</li>
+        <li>Speed - Set the speed</li>
+        <li>Direction - Set direction (fan is properly stopped before)</li>
+        <li>Light - Turn the light on or off</li>
+        <li>Mode - Set the operating mode</li>
+      </ul>
+    </p>
+  </description>
+  <params>
+    <param field="Username" label="Device ID" required="true"/>
+    <param field="Address" label="Device IP address" required="true"/>
+    <param field="Port" label="Device port" default="6668"/>
+    <param field="Password" label="Device local key" required="true" password="true"/>
+    <param field="Mode1" label="Included units" default="power,speed,direction,light,mode"/>
+  </params>
+</plugin>
