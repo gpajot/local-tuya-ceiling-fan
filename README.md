@@ -12,7 +12,7 @@ from local_tuya_ceiling_fan import FanDevice, FanSpeed
 
 async with FanDevice(DeviceConfig(ProtocolConfig("{id}", "{address}", b"{key}"))) as device:
     await device.switch(True)
-    await device.set_speec(FanSpeed.L2)
+    await device.set_speed(FanSpeed.L2)
     await device.switch(False)
 ```
 
@@ -40,5 +40,6 @@ The hardware will create up to 5 devices to control the fan (all prefixed with h
 - `light`: turn the light on or off
 - `mode`: set the operating mode
 
-- You can customize the devices you want added in the hardware page.
-All device names and levels van be changed once added as only IDs are used internally.
+You can customize the devices you want added in the hardware page.
+
+All device names and levels can be changed once added as only IDs are used internally.
