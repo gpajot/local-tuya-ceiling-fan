@@ -11,16 +11,16 @@ include = ["local_tuya_ceiling_fan/py.typed"]
 [tool.poetry.dependencies]
 python = ">=3.7,<3.12"
 
-local_tuya = ">=0.2.1,<1"
+local-tuya = ">=1,<2"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^7"
-pytest-asyncio = "^0"
-pytest-mock = "^3"
-ruff = "~0"
-black = "^22"
-mypy = "~0"
-pre-commit = "^2"
+pytest = ">=7,<8"
+pytest-asyncio = ">=0,<1"
+pytest-mock = ">=3,<4"
+ruff = ">=0,<1"
+mypy = ">=1,<2"
+black = ">=23,<24"
+pre-commit = ">=2,<3"
 
 [build-system]
 requires = ["poetry-core"]
