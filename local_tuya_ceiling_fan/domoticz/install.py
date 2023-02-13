@@ -68,7 +68,6 @@ def on_start(
     device = FanDevice(
         config=DeviceConfig(
             protocol=protocol_config,
-            debounce_updates=1,
         ),
     )
     manager.register(
