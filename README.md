@@ -6,6 +6,14 @@
 
 Control a Tuya Ceiling fan over LAN.
 
+## Features
+- asynchronous methods and transport
+- persistent communication to the device
+- automatic remote device state updates (remotes can still be used)
+- configurable buffering for subsequent updates
+- constraints between device commands
+- Domoticz plugin using a dedicated thread
+
 ## Usage
 See [local tuya requirements](https://github.com/gpajot/local-tuya#requirements) first to find device information.
 
@@ -29,7 +37,7 @@ Make sure to read [plugin instructions](https://www.domoticz.com/wiki/Using_Pyth
 > 💡 The Domoticz version should be `2022.1` or higher.
 
 ```shell
-python -m pip install local-tuya-ceiling-fan
+python -m pip install --upgrade local-tuya-ceiling-fan
 python -m local_tuya_ceiling_fan.domoticz.install
 ```
 Domoticz path defaults to `~/domoticz` but you can pass a `-p` option to the second command to change that:

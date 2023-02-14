@@ -39,11 +39,11 @@ def _get_metadata() -> PluginMetadata:
                     "h3": "Devices",
                     "ul": {
                         "li": [
-                            "Power - Turn the fan on or off",
-                            "Speed - Set the speed",
-                            "Direction - Set direction (fan is properly stopped before)",
-                            "Light - Turn the light on or off",
-                            "Mode - Set the operating mode",
+                            "power - Turn the fan on or off",
+                            "speed - Set the speed",
+                            "direction - Set direction (fan is properly stopped before)",
+                            "light - Turn the light on or off",
+                            "mode - Set the operating mode",
                         ]
                     },
                 },

@@ -46,11 +46,11 @@ class FanState(State):
     @classmethod
     def load(cls, values: Values) -> "FanState":
         return cls(
-            power=bool(values[FanDataPoint.POWER.value]),
-            speed=FanSpeed(values[FanDataPoint.SPEED.value]),
-            direction=FanDirection(values[FanDataPoint.DIRECTION.value]),
-            light=bool(values[FanDataPoint.LIGHT.value]),
-            mode=FanMode(values[FanDataPoint.MODE.value]),
+            power=bool(values[FanDataPoint.POWER]),
+            speed=FanSpeed(values[FanDataPoint.SPEED]),
+            direction=FanDirection(values[FanDataPoint.DIRECTION]),
+            light=bool(values[FanDataPoint.LIGHT]),
+            mode=FanMode(values[FanDataPoint.MODE]),
         )
 
 
