@@ -37,7 +37,7 @@ Make sure to read [plugin instructions](https://www.domoticz.com/wiki/Using_Pyth
 > 💡 The Domoticz version should be `2022.1` or higher.
 
 ```shell
-python -m pip install --upgrade local-tuya-ceiling-fan
+python -m pip install --upgrade local-tuya-ceiling-fan[domoticz]
 python -m local_tuya_ceiling_fan.domoticz.install
 ```
 Domoticz path defaults to `~/domoticz` but you can pass a `-p` option to the second command to change that:
