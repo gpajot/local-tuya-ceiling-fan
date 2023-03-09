@@ -1,7 +1,5 @@
 import asyncio
-import sys
 
-import pytest
 from local_tuya import Device, DeviceConfig
 
 from local_tuya_ceiling_fan.device import (
@@ -32,10 +30,6 @@ def test_load_state():
     )
 
 
-@pytest.mark.skipif(
-    sys.version_info < (3, 8),
-    reason="requires python3.8 or higher for AsyncMock",
-)
 async def test_direction_change_lock(mocker):
     base_device = mocker.Mock(spec=Device)
     mocker.patch(
