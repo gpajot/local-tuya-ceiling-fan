@@ -3,7 +3,15 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Any, Callable, Optional
 
-from local_tuya import DataPoint, Device, DeviceConfig, State, Values
+from local_tuya import (
+    Constraint,
+    Constraints,
+    DataPoint,
+    Device,
+    DeviceConfig,
+    State,
+    Values,
+)
 
 
 class FanDataPoint(DataPoint):
@@ -62,7 +70,18 @@ class FanDevice(Device[FanState]):
         # Seconds to wait until the fan stops before changing direction.
         change_direction_wait_safety: float = 30,
     ):
-        super().__init__(config, FanState.load, state_updated_callback)
+        super().__init__(
+            config,
+            FanState.load,
+            state_updated_callback,
+            Constraints(
+                Constraint(
+                    FanDataPoint.MODE,
+                    FanMode.TEMP,
+                    (FanDataPoint.SPEED, None),
+                ),
+            ),
+        )
         # Since the direction needs to be changed while fan is fully stopped,
         # add this protection to be sure.
         self._change_direction_wait_safety = change_direction_wait_safety
