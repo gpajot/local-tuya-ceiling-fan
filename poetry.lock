@@ -84,13 +84,13 @@ files = [
 
 [[package]]
 name = "concurrent-tasks"
-version = "1.5.0"
+version = "1.6.0"
 description = "Tools to run asyncio tasks concurrently."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "concurrent_tasks-1.5.0-py3-none-any.whl", hash = "sha256:f460d668354b1dba5a41bc6eee1d7241f0b6ad15c60db663d8f256f0369fe2d0"},
-    {file = "concurrent_tasks-1.5.0.tar.gz", hash = "sha256:ceb158ed154b60a9511854dcca751cd9fc61a181525fc2fb96e057a3f888d61f"},
+    {file = "concurrent_tasks-1.6.0-py3-none-any.whl", hash = "sha256:ef37acfa431c7deda1054e0f5014431826dc07ee9b08b87d725295d32d31ef0b"},
+    {file = "concurrent_tasks-1.6.0.tar.gz", hash = "sha256:8ec1da25cab13b571a78234fc0a637ea70851847f048fd0dd23f0c1371036214"},
 ]
 
 [[package]]
@@ -161,17 +161,17 @@ files = [
 
 [[package]]
 name = "local-tuya"
-version = "2.1.0"
+version = "2.2.0"
 description = "Interface to Tuya devices over LAN."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "local_tuya-2.1.0-py3-none-any.whl", hash = "sha256:f17fe5c3394fcd53b39149882c483ee8408feb42c1fdbea62dea4d5366ae8ba0"},
-    {file = "local_tuya-2.1.0.tar.gz", hash = "sha256:7fa074299e1f39afbaae8e333ad5674171f49297ec5601da06bf8f2d7becfb4e"},
+    {file = "local_tuya-2.2.0-py3-none-any.whl", hash = "sha256:5c3cd4fcb82748798078c903bedc12470f4db1c0de1b095061ec2a22ee8e70a5"},
+    {file = "local_tuya-2.2.0.tar.gz", hash = "sha256:f3589946ef26348dd214a0adc70b739ddc17f030757f220a0dc530ca53d6e33c"},
 ]
 
 [package.dependencies]
-concurrent-tasks = ">=1.4,<2"
+concurrent-tasks = ">=1.6,<2"
 pycryptodomex = ">=3,<4"
 
 [[package]]
