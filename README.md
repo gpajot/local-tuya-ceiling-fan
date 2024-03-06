@@ -1,8 +1,8 @@
 # local-tuya-ceiling-fan
 
-[![tests](https://github.com/gpajot/local-tuya-ceiling-fan/workflows/Test/badge.svg?branch=main&event=push)](https://github.com/gpajot/local-tuya-ceiling-fan/actions?query=workflow%3ATest+branch%3Amain+event%3Apush)
-[![version](https://img.shields.io/pypi/v/local-tuya-ceiling-fan?label=stable)](https://pypi.org/project/local-tuya-ceiling-fan/)
-[![python](https://img.shields.io/pypi/pyversions/local-tuya-ceiling-fan)](https://pypi.org/project/local-tuya-ceiling-fan/)
+[![tests](https://github.com/gpajot/local-tuya-ceiling-fan/actions/workflows/test.yml/badge.svg?branch=main&event=push)](https://github.com/gpajot/local-tuya-ceiling-fan/actions/workflows/test.yml?query=branch%3Amain+event%3Apush)
+[![version](https://img.shields.io/pypi/v/local_tuya_ceiling_fan?label=stable)](https://pypi.org/project/local_tuya_ceiling_fan/)
+[![python](https://img.shields.io/pypi/pyversions/local_tuya_ceiling_fan)](https://pypi.org/project/local_tuya_ceiling_fan/)
 
 Control a Tuya Ceiling fan over LAN.
 
