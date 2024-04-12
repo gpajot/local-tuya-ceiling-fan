@@ -74,7 +74,7 @@ class FanDevice(Device[FanState]):
             config,
             FanState.load,
             state_updated_callback,
-            Constraints(
+            constraints=Constraints(
                 Constraint(
                     FanDataPoint.MODE,
                     FanMode.TEMP,
