@@ -1,7 +1,6 @@
 import asyncio
 from dataclasses import dataclass
 from enum import Enum
-from typing import Any, Callable, Optional
 
 from local_tuya import (
     Constraint,
@@ -66,14 +65,12 @@ class FanDevice(Device[FanState]):
     def __init__(
         self,
         config: DeviceConfig,
-        state_updated_callback: Optional[Callable[[FanState], Any]] = None,
         # Seconds to wait until the fan stops before changing direction.
         change_direction_wait_safety: float = 30,
     ):
         super().__init__(
             config,
             FanState.load,
-            state_updated_callback,
             constraints=Constraints(
                 Constraint(
                     FanDataPoint.MODE,
