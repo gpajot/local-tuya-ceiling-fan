@@ -528,5 +528,5 @@ domoticz = ["local-tuya-domoticz-tools"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.8"
-content-hash = "3cc0e756ba6b2b9ad63e58a458fd6ee7737a546b0d57a6139e51c78180de44a4"
+python-versions = ">=3.9"
+content-hash = "84b63494ea97c7e17e23b5e2c4c49b24f760cb6e7339c25f13c110356acd3c61"
